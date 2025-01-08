@@ -1,0 +1,43 @@
+.container {
+  width: 100vw;
+  height: 100vh;
+  .headerApp,
+  .menuApp,
+  .footerApp {
+    width: 100%;
+    height: 10vh;
+    background-color: red;
+    color: white;
+    text-align: center;
+    line-height: 10vh;
+  }
+  .mainApp {
+    width: 100vw;
+    height: 100vh - 30vh;
+    display: flex;
+    & > div {
+      height: 100%;
+    }
+    .middle {
+      width: 100vw - 20vw;
+      display: flex;
+      flex-direction: column;
+      background-color: lightblue;
+      div {
+        height: 50%;
+        &:first-child {
+          background-color: rgb(119, 204, 232);
+        }
+      }
+    }
+    .filterApp,
+    .configApp {
+      width: 10vw;
+      background-color: rgb(89, 89, 218);
+      color: white;
+    }
+  }
+  .menuApp {
+    background-color: rgb(204, 49, 49);
+  }
+}
