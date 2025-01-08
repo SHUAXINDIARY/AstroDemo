@@ -1,0 +1,21 @@
+---
+import "../../assets/global.css";
+import styles from "../index.module.less";
+import FilterApp from "./Apps/FilterApp";
+---
+
+<div class={styles.container}>
+  <div class={styles.headerApp}>Header App</div>
+  <div class={styles.menuApp}>Menu HTML</div>
+  <div class={styles.mainApp}>
+    <div class={styles.filterApp}>
+      <FilterApp client:load />
+    </div>
+    <div class={styles.middle}>
+      <div>Image List App</div>
+      <div>Products Html</div>
+    </div>
+    <div class={styles.configApp}>Config Add App</div>
+  </div>
+  <div class={styles.footerApp}>Footer App</div>
+</div>
