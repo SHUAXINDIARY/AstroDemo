@@ -2,6 +2,7 @@
 import "../../assets/global.css";
 import styles from "../index.module.less";
 import FilterApp from "./Apps/FilterApp";
+import OutFirstScreenApp from "./Apps/OutFirstScreen/index.vue";
 ---
 
 <div class={styles.container}>
@@ -9,7 +10,7 @@ import FilterApp from "./Apps/FilterApp";
   <div class={styles.menuApp}>Menu HTML</div>
   <div class={styles.mainApp}>
     <div class={styles.filterApp}>
-      <FilterApp client:load />
+      <FilterApp client:only="react" />
     </div>
     <div class={styles.middle}>
       <div>Image List App</div>
@@ -19,3 +20,6 @@ import FilterApp from "./Apps/FilterApp";
   </div>
   <div class={styles.footerApp}>Footer App</div>
 </div>
+
+<!-- <OutFirstScreenApp client:only="vue" /> -->
+<OutFirstScreenApp client:visible />
