@@ -1,7 +1,13 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const FilterApp = () => {
   const [title, setTitle] = useState("Filter App");
+
+  useEffect(() => {
+    console.log("调试window - react", window);
+    window.test = "react";
+  }, []);
+
   return (
     <>
       <div

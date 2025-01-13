@@ -11,8 +11,6 @@ const getDataName = () => {
 };
 ---
 
-<script is:inline src="/js/prepare.js"></script>
-
 <div class={styles.container}>
   <div class={styles.headerApp}>{HeaderAppName}</div>
   <div class={styles.menuApp}>Menu HTML</div>
@@ -28,11 +26,7 @@ const getDataName = () => {
 </div>
 
 <OutFirstScreenApp />
-<script is:inline async src="/js/index.js"></script>
-<script>
-  import { getTTI } from "../../utils";
-  getTTI();
-</script>
+
 <script>
   const footerApp = document.querySelector("#footerApp");
   footerApp?.addEventListener("click", () => {

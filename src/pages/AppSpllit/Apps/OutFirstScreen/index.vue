@@ -22,6 +22,7 @@ export default {
         const title = ref("Filter App");
 
         const updateTitle = () => {
+            console.log("调试window - vue", window, window.test);
             title.value = `ReRender Filter App - \n ${parseInt(Math.random() * 1000 + "")}`;
         };
 
