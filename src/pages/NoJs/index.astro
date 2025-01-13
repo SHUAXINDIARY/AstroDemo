@@ -2,7 +2,6 @@
 import "../../assets/global.css";
 import styles from "../index.module.less";
 import OutFirstScreenApp from "../AppSpllit/Apps/OutFirstScreen/index.vue";
-
 const HeaderAppName = "Header App";
 
 const getDataName = () => {
@@ -11,6 +10,8 @@ const getDataName = () => {
   });
 };
 ---
+
+<script is:inline src="/js/prepare.js"></script>
 
 <div class={styles.container}>
   <div class={styles.headerApp}>{HeaderAppName}</div>
@@ -27,7 +28,11 @@ const getDataName = () => {
 </div>
 
 <OutFirstScreenApp />
-
+<script is:inline async src="/js/index.js"></script>
+<script>
+  import { getTTI } from "../../utils";
+  getTTI();
+</script>
 <script>
   const footerApp = document.querySelector("#footerApp");
   footerApp?.addEventListener("click", () => {
