@@ -1,6 +1,7 @@
 ---
 import "../assets/global.css";
 import ZhHead from "../components/ZhHead.astro";
+import { Link } from "@nextui-org/react";
 const DemoList = [
   "/NoJs",
   "/AppSpllit",
@@ -18,7 +19,9 @@ const DemoList = [
       DemoList.map((url) => {
         return (
           <div>
-            <a href={url}>go to demo - {url.split("/")[1]}</a>
+            <Link isBlock href={url}>
+              go to demo - {url.split("/")[1]}
+            </Link>
           </div>
         );
       })
