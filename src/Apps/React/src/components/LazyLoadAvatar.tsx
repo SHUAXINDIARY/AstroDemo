@@ -12,13 +12,13 @@ const LazyLoadAvatar = (props: {
   const ref = useRef(null);
   const [inViewport] = useInViewport(ref);
 
-  const [source, setSource] = useState("");
+  const [source, setSource] = useState(url);
 
-  useEffect(() => {
-    if (inViewport && !source) {
-      setSource(url);
-    }
-  }, [inViewport]);
+  // useEffect(() => {
+  //   if (inViewport && !source) {
+  //     setSource(url);
+  //   }
+  // }, [inViewport]);
 
   if (!useLazyLoad) {
     if (props.useAvatar) {

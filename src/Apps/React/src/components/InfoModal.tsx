@@ -31,7 +31,7 @@ const InfoModal = () => {
                   随便吧丶不如跳舞
                 </a>
                 制作的生涯图：
-                <img className="w-1/5 h-1/2 m-auto" src={XHS} alt="cover" />
+                <img className="w-1/5 h-1/2 m-auto" src={XHS.src} alt="cover" />
               </p>
               <p>
                 数据来自
