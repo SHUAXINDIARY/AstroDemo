@@ -1,7 +1,10 @@
 ---
 import Layout from "../../layouts/Layout.astro";
+import { MainApp } from "../../Apps/React/src/main";
 ---
 
 <Layout>
-  <div>测试</div>
+  <div id="root">
+    <MainApp client:only="react" />
+  </div>
 </Layout>
