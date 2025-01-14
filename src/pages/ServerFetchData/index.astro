@@ -1,0 +1,14 @@
+---
+import ZhHead from "../../components/ZhHead.astro";
+import { getData } from "./http";
+
+const data = await getData();
+---
+
+<ZhHead />
+
+{
+  data.map((item) => {
+    return <div>{item.title}</div>;
+  })
+}
