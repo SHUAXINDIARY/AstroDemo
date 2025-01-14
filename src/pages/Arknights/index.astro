@@ -1,0 +1,10 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import { MainApp } from "../../Apps/React/src/main";
+---
+
+<Layout title="Arknights生成器">
+  <div id="root">
+    <MainApp client:only="react" />
+  </div>
+</Layout>
